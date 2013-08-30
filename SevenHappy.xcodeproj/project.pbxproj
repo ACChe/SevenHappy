@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A03C7B417D09656009671CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A03C7B317D09656009671CE /* Cocoa.framework */; };
+		6A03C7BE17D09656009671CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A03C7BC17D09656009671CE /* InfoPlist.strings */; };
+		6A03C7C017D09656009671CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A03C7BF17D09656009671CE /* main.m */; };
+		6A03C7C417D09656009671CE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6A03C7C217D09656009671CE /* Credits.rtf */; };
+		6A03C7C717D09656009671CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A03C7C617D09656009671CE /* AppDelegate.m */; };
+		6A03C7CA17D09656009671CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A03C7C817D09656009671CE /* MainMenu.xib */; };
+		6A03C7CC17D09656009671CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A03C7CB17D09656009671CE /* Images.xcassets */; };
+		6A03C7D317D09656009671CE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A03C7D217D09656009671CE /* XCTest.framework */; };
+		6A03C7D417D09656009671CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A03C7B317D09656009671CE /* Cocoa.framework */; };
+		6A03C7DC17D09656009671CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A03C7DA17D09656009671CE /* InfoPlist.strings */; };
+		6A03C7DE17D09656009671CE /* SevenHappyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A03C7DD17D09656009671CE /* SevenHappyTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A03C7D517D09656009671CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A03C7A817D09656009671CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A03C7AF17D09656009671CE;
+			remoteInfo = SevenHappy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6A03C7B017D09656009671CE /* SevenHappy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SevenHappy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A03C7B317D09656009671CE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6A03C7B617D09656009671CE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		6A03C7B717D09656009671CE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6A03C7B817D09656009671CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6A03C7BB17D09656009671CE /* SevenHappy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SevenHappy-Info.plist"; sourceTree = "<group>"; };
+		6A03C7BD17D09656009671CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6A03C7BF17D09656009671CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6A03C7C117D09656009671CE /* SevenHappy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SevenHappy-Prefix.pch"; sourceTree = "<group>"; };
+		6A03C7C317D09656009671CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		6A03C7C517D09656009671CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6A03C7C617D09656009671CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6A03C7C917D09656009671CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6A03C7CB17D09656009671CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6A03C7D117D09656009671CE /* SevenHappyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SevenHappyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A03C7D217D09656009671CE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6A03C7D917D09656009671CE /* SevenHappyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SevenHappyTests-Info.plist"; sourceTree = "<group>"; };
+		6A03C7DB17D09656009671CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6A03C7DD17D09656009671CE /* SevenHappyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SevenHappyTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A03C7AD17D09656009671CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A03C7B417D09656009671CE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A03C7CE17D09656009671CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A03C7D417D09656009671CE /* Cocoa.framework in Frameworks */,
+				6A03C7D317D09656009671CE /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A03C7A717D09656009671CE = {
+			isa = PBXGroup;
+			children = (
+				6A03C7B917D09656009671CE /* SevenHappy */,
+				6A03C7D717D09656009671CE /* SevenHappyTests */,
+				6A03C7B217D09656009671CE /* Frameworks */,
+				6A03C7B117D09656009671CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A03C7B117D09656009671CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A03C7B017D09656009671CE /* SevenHappy.app */,
+				6A03C7D117D09656009671CE /* SevenHappyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A03C7B217D09656009671CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A03C7B317D09656009671CE /* Cocoa.framework */,
+				6A03C7D217D09656009671CE /* XCTest.framework */,
+				6A03C7B517D09656009671CE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A03C7B517D09656009671CE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A03C7B617D09656009671CE /* AppKit.framework */,
+				6A03C7B717D09656009671CE /* CoreData.framework */,
+				6A03C7B817D09656009671CE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		6A03C7B917D09656009671CE /* SevenHappy */ = {
+			isa = PBXGroup;
+			children = (
+				6A03C7C517D09656009671CE /* AppDelegate.h */,
+				6A03C7C617D09656009671CE /* AppDelegate.m */,
+				6A03C7C817D09656009671CE /* MainMenu.xib */,
+				6A03C7CB17D09656009671CE /* Images.xcassets */,
+				6A03C7BA17D09656009671CE /* Supporting Files */,
+			);
+			path = SevenHappy;
+			sourceTree = "<group>";
+		};
+		6A03C7BA17D09656009671CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A03C7BB17D09656009671CE /* SevenHappy-Info.plist */,
+				6A03C7BC17D09656009671CE /* InfoPlist.strings */,
+				6A03C7BF17D09656009671CE /* main.m */,
+				6A03C7C117D09656009671CE /* SevenHappy-Prefix.pch */,
+				6A03C7C217D09656009671CE /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A03C7D717D09656009671CE /* SevenHappyTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A03C7DD17D09656009671CE /* SevenHappyTests.m */,
+				6A03C7D817D09656009671CE /* Supporting Files */,
+			);
+			path = SevenHappyTests;
+			sourceTree = "<group>";
+		};
+		6A03C7D817D09656009671CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A03C7D917D09656009671CE /* SevenHappyTests-Info.plist */,
+				6A03C7DA17D09656009671CE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A03C7AF17D09656009671CE /* SevenHappy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A03C7E117D09656009671CE /* Build configuration list for PBXNativeTarget "SevenHappy" */;
+			buildPhases = (
+				6A03C7AC17D09656009671CE /* Sources */,
+				6A03C7AD17D09656009671CE /* Frameworks */,
+				6A03C7AE17D09656009671CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SevenHappy;
+			productName = SevenHappy;
+			productReference = 6A03C7B017D09656009671CE /* SevenHappy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A03C7D017D09656009671CE /* SevenHappyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A03C7E417D09656009671CE /* Build configuration list for PBXNativeTarget "SevenHappyTests" */;
+			buildPhases = (
+				6A03C7CD17D09656009671CE /* Sources */,
+				6A03C7CE17D09656009671CE /* Frameworks */,
+				6A03C7CF17D09656009671CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A03C7D617D09656009671CE /* PBXTargetDependency */,
+			);
+			name = SevenHappyTests;
+			productName = SevenHappyTests;
+			productReference = 6A03C7D117D09656009671CE /* SevenHappyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A03C7A817D09656009671CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = bopomofo;
+				TargetAttributes = {
+					6A03C7D017D09656009671CE = {
+						TestTargetID = 6A03C7AF17D09656009671CE;
+					};
+				};
+			};
+			buildConfigurationList = 6A03C7AB17D09656009671CE /* Build configuration list for PBXProject "SevenHappy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A03C7A717D09656009671CE;
+			productRefGroup = 6A03C7B117D09656009671CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A03C7AF17D09656009671CE /* SevenHappy */,
+				6A03C7D017D09656009671CE /* SevenHappyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A03C7AE17D09656009671CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A03C7BE17D09656009671CE /* InfoPlist.strings in Resources */,
+				6A03C7CC17D09656009671CE /* Images.xcassets in Resources */,
+				6A03C7C417D09656009671CE /* Credits.rtf in Resources */,
+				6A03C7CA17D09656009671CE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A03C7CF17D09656009671CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A03C7DC17D09656009671CE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A03C7AC17D09656009671CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A03C7C717D09656009671CE /* AppDelegate.m in Sources */,
+				6A03C7C017D09656009671CE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A03C7CD17D09656009671CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A03C7DE17D09656009671CE /* SevenHappyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A03C7D617D09656009671CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A03C7AF17D09656009671CE /* SevenHappy */;
+			targetProxy = 6A03C7D517D09656009671CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6A03C7BC17D09656009671CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A03C7BD17D09656009671CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6A03C7C217D09656009671CE /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A03C7C317D09656009671CE /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		6A03C7C817D09656009671CE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A03C7C917D09656009671CE /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		6A03C7DA17D09656009671CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A03C7DB17D09656009671CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A03C7DF17D09656009671CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6A03C7E017D09656009671CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6A03C7E217D09656009671CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SevenHappy/SevenHappy-Prefix.pch";
+				INFOPLIST_FILE = "SevenHappy/SevenHappy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6A03C7E317D09656009671CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SevenHappy/SevenHappy-Prefix.pch";
+				INFOPLIST_FILE = "SevenHappy/SevenHappy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6A03C7E517D09656009671CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SevenHappy.app/Contents/MacOS/SevenHappy";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SevenHappy/SevenHappy-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SevenHappyTests/SevenHappyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6A03C7E617D09656009671CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SevenHappy.app/Contents/MacOS/SevenHappy";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SevenHappy/SevenHappy-Prefix.pch";
+				INFOPLIST_FILE = "SevenHappyTests/SevenHappyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A03C7AB17D09656009671CE /* Build configuration list for PBXProject "SevenHappy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A03C7DF17D09656009671CE /* Debug */,
+				6A03C7E017D09656009671CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A03C7E117D09656009671CE /* Build configuration list for PBXNativeTarget "SevenHappy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A03C7E217D09656009671CE /* Debug */,
+				6A03C7E317D09656009671CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6A03C7E417D09656009671CE /* Build configuration list for PBXNativeTarget "SevenHappyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A03C7E517D09656009671CE /* Debug */,
+				6A03C7E617D09656009671CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A03C7A817D09656009671CE /* Project object */;
+}
