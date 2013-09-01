@@ -40,6 +40,7 @@ int main(int argc, const char * argv[])
                 [targetMutableArray addObject:[obj componentsSeparatedByString:@","]];
                 NSLog(@"here (%lu) is %@ ", idx, [targetMutableArray objectAtIndex:idx]);
             }];
+            NSLog(@"the test code is %@", [[targetMutableArray objectAtIndex:0] objectAtIndex:1]);
         }
         
     }
