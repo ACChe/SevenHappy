@@ -29,16 +29,16 @@ int main(int argc, const char * argv[])
         if (textFileContents != NULL)
         {
             NSArray *totalStringList = [textFileContents componentsSeparatedByString:@"\n"];
-            NSLog(@"result is %@", totalStringList);
+//            NSLog(@"result is %@", totalStringList);
             NSLog(@"total number is : %ld", [totalStringList count]);
             NSArray *tempStringArray = [totalStringList objectAtIndex:0];
-            NSLog(@"one of the list is : %@", tempStringArray);
+//            NSLog(@"one of the list is : %@", tempStringArray);
             
             NSMutableArray *targetMutableArray = [[NSMutableArray alloc] init];
             
-            [tempStringArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-//                [targetMutableArray addObject:[[obj objectAtIndex:idx] componentsSeparatedByString:@","]];
-                NSLog(@"object(%lu)'s description is %@", idx, [obj description]);
+            [totalStringList enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                [targetMutableArray addObject:[obj componentsSeparatedByString:@","]];
+                NSLog(@"here (%lu) is %@ ", idx, [targetMutableArray objectAtIndex:idx]);
             }];
         }
         
