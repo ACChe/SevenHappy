@@ -466,6 +466,7 @@
 				6A03C7E317D09656009671CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A03C7E417D09656009671CE /* Build configuration list for PBXNativeTarget "SevenHappyTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +475,7 @@
 				6A03C7E617D09656009671CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
