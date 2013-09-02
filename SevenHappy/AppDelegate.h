@@ -8,8 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class Store;
+
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (readonly, nonatomic, strong) Store * store;
 
 @end

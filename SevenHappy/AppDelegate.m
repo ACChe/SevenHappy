@@ -7,8 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "Store.h"
 
 @implementation AppDelegate
+@synthesize store = _store;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
