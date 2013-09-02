@@ -18,6 +18,9 @@
 		6A03C7D417D09656009671CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A03C7B317D09656009671CE /* Cocoa.framework */; };
 		6A03C7DC17D09656009671CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A03C7DA17D09656009671CE /* InfoPlist.strings */; };
 		6A03C7DE17D09656009671CE /* SevenHappyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A03C7DD17D09656009671CE /* SevenHappyTests.m */; };
+		6A1BCF4917D47BB500742F59 /* SevenHappy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6A1BCF4817D47BB500742F59 /* SevenHappy.txt */; };
+		6A1BCF4D17D4836E00742F59 /* NumberData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1BCF4C17D4836E00742F59 /* NumberData.m */; };
+		6AAB655D17D4A18600195509 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB655C17D4A18600195509 /* Store.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,11 @@
 		6A03C7D917D09656009671CE /* SevenHappyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SevenHappyTests-Info.plist"; sourceTree = "<group>"; };
 		6A03C7DB17D09656009671CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A03C7DD17D09656009671CE /* SevenHappyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SevenHappyTests.m; sourceTree = "<group>"; };
+		6A1BCF4817D47BB500742F59 /* SevenHappy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SevenHappy.txt; sourceTree = "<group>"; };
+		6A1BCF4B17D4836E00742F59 /* NumberData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberData.h; sourceTree = "<group>"; };
+		6A1BCF4C17D4836E00742F59 /* NumberData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberData.m; sourceTree = "<group>"; };
+		6AAB655B17D4A18600195509 /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
+		6AAB655C17D4A18600195509 /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +138,7 @@
 		6A03C7BA17D09656009671CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6A1BCF4817D47BB500742F59 /* SevenHappy.txt */,
 				6A03C7BB17D09656009671CE /* SevenHappy-Info.plist */,
 				6A03C7BC17D09656009671CE /* InfoPlist.strings */,
 				6A03C7BF17D09656009671CE /* main.m */,
@@ -167,6 +176,10 @@
 		6A03C7E817D09FD5009671CE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6A1BCF4B17D4836E00742F59 /* NumberData.h */,
+				6A1BCF4C17D4836E00742F59 /* NumberData.m */,
+				6AAB655B17D4A18600195509 /* Store.h */,
+				6AAB655C17D4A18600195509 /* Store.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -255,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A03C7BE17D09656009671CE /* InfoPlist.strings in Resources */,
+				6A1BCF4917D47BB500742F59 /* SevenHappy.txt in Resources */,
 				6A03C7CC17D09656009671CE /* Images.xcassets in Resources */,
 				6A03C7C417D09656009671CE /* Credits.rtf in Resources */,
 				6A03C7CA17D09656009671CE /* MainMenu.xib in Resources */,
@@ -276,8 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A1BCF4D17D4836E00742F59 /* NumberData.m in Sources */,
 				6A03C7C717D09656009671CE /* AppDelegate.m in Sources */,
 				6A03C7C017D09656009671CE /* main.m in Sources */,
+				6AAB655D17D4A18600195509 /* Store.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +417,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
