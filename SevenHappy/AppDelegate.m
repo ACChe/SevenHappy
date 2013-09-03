@@ -17,6 +17,13 @@
     return [NSApplication sharedApplication].delegate;
 }
 
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
+    // Insert code here to initialize your application
+    NSArray * numberArray = _store.numbers;
+    NSLog(@"number is : %@", numberArray);
+    
+}
 
 @synthesize store = _store;
 
@@ -27,14 +34,5 @@
     }
     return _store;
 }
-
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    // Insert code here to initialize your application
-    NSArray * numberArray = _store.numbers;
-    NSLog(@"number is : %@", numberArray);
-    
-}
-
 
 @end
