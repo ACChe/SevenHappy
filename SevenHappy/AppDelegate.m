@@ -10,11 +10,31 @@
 #import "Store.h"
 
 @implementation AppDelegate
+
+
++ (instancetype)sharedDelegate
+{
+    return [NSApplication sharedApplication].delegate;
+}
+
+
 @synthesize store = _store;
+
+- (Store *)store
+{
+    if (_store == nil) {
+        _store = [Store store];
+    }
+    return _store;
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    NSArray * numberArray = _store.numbers;
+    NSLog(@"number is : %@", numberArray);
+    
 }
+
 
 @end

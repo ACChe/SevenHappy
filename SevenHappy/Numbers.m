@@ -6,11 +6,11 @@
 //  Copyright (c) 2013年 bopomofo. All rights reserved.
 //
 
-#import "NumberData.h"
+#import "Numbers.h"
 
-@implementation NumberData
+@implementation Numbers
 
-@synthesize numberData = _numberData;
+@synthesize number = _number;
 
 - (void)readDataFromFile
 {

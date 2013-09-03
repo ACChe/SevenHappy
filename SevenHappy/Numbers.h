@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NumberData : NSObject
+@interface Numbers : NSObject
 
-@property (nonatomic, retain) NSArray *originalNumberData;
-@property (nonatomic, retain) NSArray *numberData;
+@property (nonatomic, retain) NSArray *number;
+
 
 - (void)readDataFromFile;
 

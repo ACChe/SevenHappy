@@ -7,6 +7,7 @@
 //
 
 #import "Store.h"
+#import "Numbers.h"
 
 @implementation Store
 
@@ -20,12 +21,12 @@
 {
     if (self = [super init])
     {
-        [self readArchive];
+        [self readData];
     }
     return self;
 }
 
-- (void)readArchive
+- (void)readData
 {
     //Read the data from external file
     NSBundle *mainBundle = [NSBundle mainBundle];

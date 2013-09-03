@@ -19,7 +19,7 @@
 		6A03C7DC17D09656009671CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A03C7DA17D09656009671CE /* InfoPlist.strings */; };
 		6A03C7DE17D09656009671CE /* SevenHappyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A03C7DD17D09656009671CE /* SevenHappyTests.m */; };
 		6A1BCF4917D47BB500742F59 /* SevenHappy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6A1BCF4817D47BB500742F59 /* SevenHappy.txt */; };
-		6A1BCF4D17D4836E00742F59 /* NumberData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1BCF4C17D4836E00742F59 /* NumberData.m */; };
+		6A1BCF4D17D4836E00742F59 /* Numbers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1BCF4C17D4836E00742F59 /* Numbers.m */; };
 		6AAB655D17D4A18600195509 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB655C17D4A18600195509 /* Store.m */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +54,8 @@
 		6A03C7DB17D09656009671CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A03C7DD17D09656009671CE /* SevenHappyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SevenHappyTests.m; sourceTree = "<group>"; };
 		6A1BCF4817D47BB500742F59 /* SevenHappy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SevenHappy.txt; sourceTree = "<group>"; };
-		6A1BCF4B17D4836E00742F59 /* NumberData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberData.h; sourceTree = "<group>"; };
-		6A1BCF4C17D4836E00742F59 /* NumberData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberData.m; sourceTree = "<group>"; };
+		6A1BCF4B17D4836E00742F59 /* Numbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Numbers.h; sourceTree = "<group>"; };
+		6A1BCF4C17D4836E00742F59 /* Numbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Numbers.m; sourceTree = "<group>"; };
 		6AAB655B17D4A18600195509 /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
 		6AAB655C17D4A18600195509 /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,10 +138,10 @@
 		6A03C7BA17D09656009671CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6A03C7BF17D09656009671CE /* main.m */,
 				6A1BCF4817D47BB500742F59 /* SevenHappy.txt */,
 				6A03C7BB17D09656009671CE /* SevenHappy-Info.plist */,
 				6A03C7BC17D09656009671CE /* InfoPlist.strings */,
-				6A03C7BF17D09656009671CE /* main.m */,
 				6A03C7C117D09656009671CE /* SevenHappy-Prefix.pch */,
 				6A03C7C217D09656009671CE /* Credits.rtf */,
 			);
@@ -176,8 +176,8 @@
 		6A03C7E817D09FD5009671CE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6A1BCF4B17D4836E00742F59 /* NumberData.h */,
-				6A1BCF4C17D4836E00742F59 /* NumberData.m */,
+				6A1BCF4B17D4836E00742F59 /* Numbers.h */,
+				6A1BCF4C17D4836E00742F59 /* Numbers.m */,
 				6AAB655B17D4A18600195509 /* Store.h */,
 				6AAB655C17D4A18600195509 /* Store.m */,
 			);
@@ -290,7 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A1BCF4D17D4836E00742F59 /* NumberData.m in Sources */,
+				6A1BCF4D17D4836E00742F59 /* Numbers.m in Sources */,
 				6A03C7C717D09656009671CE /* AppDelegate.m in Sources */,
 				6A03C7C017D09656009671CE /* main.m in Sources */,
 				6AAB655D17D4A18600195509 /* Store.m in Sources */,

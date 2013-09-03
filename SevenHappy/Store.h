@@ -14,6 +14,5 @@
 
 @property (readonly, nonatomic, strong) NSArray * numbers;
 
-- (NSArray *)sortedPhotos;
 
 @end

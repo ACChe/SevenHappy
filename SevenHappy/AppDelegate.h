@@ -12,6 +12,8 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
++ (instancetype)sharedDelegate;
+
 @property (assign) IBOutlet NSWindow *window;
 @property (readonly, nonatomic, strong) Store * store;
 
