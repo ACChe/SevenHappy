@@ -63,6 +63,16 @@
     }
 }
 
+- (void) saveResultToHistory:(NSArray *)aArray
+{
+//    NSBundle *mainBundle = [NSBundle mainBundle];
+//    NSString *historyFilePathName = [mainBundle pathForResource:@"history" ofType:@"txt"];
+    NSString * dateValue = [NSString stringWithFormat:@"%d", [[NSDate date] timeIntervalSince1970]];
+    NSLog(@"date value = %@", dateValue);
+    NSString *histroyFilePahtName = [NSString stringWithFormat: @"/Users/iosdev/Dropbox/Github/myGit/SevenHappy/SevenHappy/history_%@.txt", dateValue];
+    [aArray writeToFile:histroyFilePahtName atomically:YES];
+    
+}
 - (NSArray *)filterNumbersByNoDuplicate:(NSArray *)originalArray
 {
     NSMutableArray * tempMutableArray = [NSMutableArray arrayWithArray:originalArray];

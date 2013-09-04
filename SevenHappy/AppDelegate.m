@@ -22,10 +22,10 @@
     // Insert code here to initialize your application
     NSArray * numberArray = self.store.numbers;
     NSLog(@"number is : %@", numberArray);
-//    NSArray * rand30Array = [self.store gem30RandomNumbers];
     [self.store filterNumbersByNoDuplicate:self.store.operatedNumbers];
     NSArray * resultNumber = [self.store gemFiveRandomNumbers];
     NSLog(@"Result is : %@", resultNumber);
+    [self.store saveResultToHistory:resultNumber];
 }
 
 @synthesize store = _store;

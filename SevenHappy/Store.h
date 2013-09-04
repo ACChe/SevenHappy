@@ -19,5 +19,6 @@
 - (NSArray *) filterNumbersByNoDuplicate:(NSArray *)originalArray;
 - (NSArray *) gem30RandomNumbers;
 - (NSArray *) gemFiveRandomNumbers;
+- (void)saveResultToHistory:(NSArray *)aArray;
 
 @end
