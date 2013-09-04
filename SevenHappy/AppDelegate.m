@@ -12,17 +12,20 @@
 @implementation AppDelegate
 
 
-//+ (instancetype)sharedDelegate
-//{
-//    return [NSApplication sharedApplication].delegate;
-//}
++ (instancetype)sharedDelegate
+{
+    return [NSApplication sharedApplication].delegate;
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
     NSArray * numberArray = self.store.numbers;
     NSLog(@"number is : %@", numberArray);
-    
+//    NSArray * rand30Array = [self.store gem30RandomNumbers];
+    [self.store filterNumbersByNoDuplicate:self.store.operatedNumbers];
+    NSArray * resultNumber = [self.store gemFiveRandomNumbers];
+    NSLog(@"Result is : %@", resultNumber);
 }
 
 @synthesize store = _store;

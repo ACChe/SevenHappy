@@ -14,8 +14,10 @@
 
 @property (readonly, nonatomic, strong) NSArray * numbers;
 @property (retain, nonatomic) NSArray * operatedNumbers;
+@property (retain, nonatomic) NSArray * fileredNumbers;
 
 - (NSArray *) filterNumbersByNoDuplicate:(NSArray *)originalArray;
-- (void) gemFiveRandomNumbers;
+- (NSArray *) gem30RandomNumbers;
+- (NSArray *) gemFiveRandomNumbers;
 
 @end
