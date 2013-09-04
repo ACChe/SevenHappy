@@ -10,6 +10,7 @@
 #import "Numbers.h"
 
 @implementation Store
+@synthesize operatedNumbers = _operatedNumbers;
 
 + (instancetype)store
 {
@@ -61,4 +62,39 @@
         _numbers = [NSArray arrayWithArray:targetMutableArray];
     }
 }
+
+- (NSArray *)filterNumbersByNoDuplicate:(NSArray *)originalArray
+{
+    NSMutableArray * tempMutableArray = [NSMutableArray arrayWithArray:originalArray];
+//    [tempMutableArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+//    
+//    }]
+    NSLog(@"there are %lu 's numbers", tempMutableArray.count);
+    for (int i = 0; i < tempMutableArray.count - 1; i++)
+    {
+        for (int j = i + 1; j < tempMutableArray.count; j++)
+        {
+            if ([[tempMutableArray objectAtIndex:i] isEqualToArray:[tempMutableArray objectAtIndex:j]])
+            {
+                NSLog(@"left[%d] : %@ is equal to right[%d] : %@", i, [tempMutableArray objectAtIndex:i], j, [tempMutableArray objectAtIndex:j]);
+                [tempMutableArray removeObjectAtIndex:j];
+            }
+        }
+    }
+    NSLog(@"Total amount is = %lu", tempMutableArray.count);
+    return [NSArray arrayWithArray:tempMutableArray];
+}
+
+- (void) gem30RandomNumbers
+{
+    NSMutableArray * tempArray = [[NSMutableArray alloc] init];
+    for (int i = 0; i < 30; i++)
+    {
+        NSString * tempValue = [[NSString alloc] initWithFormat:@"%d", (arc4random() % 30 ) + 1];
+        
+    }
+}
+
+#pragma Utili method
+
 @end

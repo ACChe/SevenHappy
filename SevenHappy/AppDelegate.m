@@ -12,10 +12,10 @@
 @implementation AppDelegate
 
 
-+ (instancetype)sharedDelegate
-{
-    return [NSApplication sharedApplication].delegate;
-}
+//+ (instancetype)sharedDelegate
+//{
+//    return [NSApplication sharedApplication].delegate;
+//}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
