@@ -20,7 +20,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    NSArray * numberArray = _store.numbers;
+    NSArray * numberArray = self.store.numbers;
     NSLog(@"number is : %@", numberArray);
     
 }
