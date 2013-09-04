@@ -13,6 +13,9 @@
 + (instancetype)store;
 
 @property (readonly, nonatomic, strong) NSArray * numbers;
+@property (retain, nonatomic) NSArray * operatedNumbers;
 
+- (NSArray *) filterNumbersByNoDuplicate:(NSArray *)originalArray;
+- (void) gemFiveRandomNumbers;
 
 @end

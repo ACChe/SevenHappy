@@ -12,10 +12,10 @@
 @implementation AppDelegate
 
 
-+ (instancetype)sharedDelegate
-{
-    return [NSApplication sharedApplication].delegate;
-}
+//+ (instancetype)sharedDelegate
+//{
+//    return [NSApplication sharedApplication].delegate;
+//}
 
 
 @synthesize store = _store;
@@ -31,9 +31,11 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    NSArray * numberArray = _store.numbers;
-    NSLog(@"number is : %@", numberArray);
-    
+    NSArray * numberArray = self.store.numbers;
+//    NSLog(@"number is : %@", numberArray);
+    NSArray * numberWithoutSameElement = [_store filterNumbersByNoDuplicate:numberArray];
+    NSLog(@"numberis : %@", numberWithoutSameElement);
+    NSLog(@"Total new numbers is : %lu", numberWithoutSameElement.count);
 }
 
 
