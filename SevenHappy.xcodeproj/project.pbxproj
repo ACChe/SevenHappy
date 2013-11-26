@@ -123,12 +123,11 @@
 		6A03C7B917D09656009671CE /* SevenHappy */ = {
 			isa = PBXGroup;
 			children = (
+				6A03C7C517D09656009671CE /* AppDelegate.h */,
+				6A03C7C617D09656009671CE /* AppDelegate.m */,
 				6A03C7E917D09FDD009671CE /* Controller */,
 				6A03C7E817D09FD5009671CE /* Model */,
 				6A03C7E717D09FC8009671CE /* View */,
-				6A03C7C517D09656009671CE /* AppDelegate.h */,
-				6A03C7C617D09656009671CE /* AppDelegate.m */,
-				6A03C7C817D09656009671CE /* MainMenu.xib */,
 				6A03C7CB17D09656009671CE /* Images.xcassets */,
 				6A03C7BA17D09656009671CE /* Supporting Files */,
 			);
@@ -138,6 +137,7 @@
 		6A03C7BA17D09656009671CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6A03C7C817D09656009671CE /* MainMenu.xib */,
 				6A03C7BF17D09656009671CE /* main.m */,
 				6A1BCF4817D47BB500742F59 /* SevenHappy.txt */,
 				6A03C7BB17D09656009671CE /* SevenHappy-Info.plist */,
