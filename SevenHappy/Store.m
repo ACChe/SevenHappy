@@ -29,15 +29,15 @@
 
 - (void)readData
 {
-    //Read the data from external file
+//    Read the data from external file
     NSBundle *mainBundle = [NSBundle mainBundle];
     NSString *theFile = [mainBundle pathForResource:@"SevenHappy" ofType:@"txt"];
-    //        NSString *filePathName = @"/SevenHappy.txt";
+//    NSString *filePathName = @"/SevenHappy.txt";
     NSError *fileError;
     NSString *textFileContents = [NSString stringWithContentsOfFile:theFile encoding:NSASCIIStringEncoding error:&fileError];
     if (fileError.code == 0)
     {
-        //            NSLog(@"textfile.txt contents: %@", textFileContents);
+//        NSLog(@"textfile.txt contents: %@", textFileContents);
     }
     else
     {
@@ -47,10 +47,10 @@
     if (textFileContents != NULL)
     {
         NSArray *totalStringList = [textFileContents componentsSeparatedByString:@"\n"];
-        //            NSLog(@"result is %@", totalStringList);
-        //            NSLog(@"total number is : %ld", [totalStringList count]);
-        //            NSArray *tempStringArray = [totalStringList objectAtIndex:0];
-        //            NSLog(@"one of the list is : %@", tempStringArray);
+//        NSLog(@"result is %@", totalStringList);
+//        NSLog(@"total number is : %ld", [totalStringList count]);
+//        NSArray *tempStringArray = [totalStringList objectAtIndex:0];
+//        NSLog(@"one of the list is : %@", tempStringArray);
         
         NSMutableArray *targetMutableArray = [[NSMutableArray alloc] init];
         
@@ -67,18 +67,19 @@
 {
 //    NSBundle *mainBundle = [NSBundle mainBundle];
 //    NSString *historyFilePathName = [mainBundle pathForResource:@"history" ofType:@"txt"];
-    NSString * dateValue = [NSString stringWithFormat:@"%d", [[NSDate date] timeIntervalSince1970]];
+    NSTimeInterval secondsPerDay = 24 * 60 * 60;
+//    NSString * dateValue = [NSString stringWithFormat:@"%f", [[NSDate date] timeIntervalSince1970]];
+    NSString *dateValue = [NSString stringWithFormat:@"%@", [[NSDate alloc] initWithTimeIntervalSinceNow:secondsPerDay]];
     NSLog(@"date value = %@", dateValue);
-    NSString *histroyFilePahtName = [NSString stringWithFormat: @"/Users/iosdev/Dropbox/Github/myGit/SevenHappy/SevenHappy/history_%@.txt", dateValue];
+    NSString *histroyFilePahtName = [NSString stringWithFormat: @"history_%@.txt", dateValue];
     [aArray writeToFile:histroyFilePahtName atomically:YES];
     
 }
 - (NSArray *)filterNumbersByNoDuplicate:(NSArray *)originalArray
 {
     NSMutableArray * tempMutableArray = [NSMutableArray arrayWithArray:originalArray];
-    //    [tempMutableArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-    //
-    //    }]
+//    [tempMutableArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+//    }]
     NSLog(@"there are %lu 's numbers", tempMutableArray.count);
     for (int i = 0; i < tempMutableArray.count - 1; i++)
     {
@@ -117,7 +118,7 @@
     NSMutableArray *tempArray = [[NSMutableArray alloc]initWithArray:temp];
     NSMutableArray*resultArray = [[NSMutableArray alloc]init];
     int i;
-    int count = temp.count;
+    long count = temp.count;
     for (i = 0; i < count; i++) {
         int index =arc4random() % (count - i);
         [resultArray addObject:[tempArray objectAtIndex:index]];

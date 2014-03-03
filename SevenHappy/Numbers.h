@@ -12,8 +12,4 @@
 
 @property (nonatomic, retain) NSArray *number;
 
-
-- (void)readDataFromFile;
-
-
 @end

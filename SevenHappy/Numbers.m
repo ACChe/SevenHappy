@@ -12,9 +12,4 @@
 
 @synthesize number = _number;
 
-- (void)readDataFromFile
-{
-    
-    
-}
 @end
