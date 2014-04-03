@@ -20,12 +20,18 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    NSArray * numberArray = self.store.numbers;
-    NSLog(@"number is : %@", numberArray);
-    [self.store filterNumbersByNoDuplicate:self.store.operatedNumbers];
-    NSArray * resultNumber = [self.store gemFiveRandomNumbers];
-    NSLog(@"Result is : %@", resultNumber);
-    [self.store saveResultToHistory:resultNumber];
+    //*** test code start
+//    NSArray * numberArray = self.store.numbers;
+//    NSArray * testNumber1 = [@"4,14,19,22,26,29,30" componentsSeparatedByString:@","];
+//    NSLog(@"testNumber1 = %@", testNumber1);
+//    NSArray * testArray = [[NSArray alloc] initWithObjects:testNumber1, nil];
+//
+//    [self.store isArray:testArray existInArrayPool:numberArray];
+    //*** test code end
+//    NSArray *noDuplicateArray = [self.store filterNumbersByNoDuplicate:self.store.operatedNumbers];
+    NSArray * resultNumber = [self.store gemFiveRandomNumbersoutOfScope:self.store.numbers];
+//    NSLog(@"Result is : %@", resultNumber);
+//    [self.store saveResultToHistory:resultNumber];
 }
 
 @synthesize store = _store;

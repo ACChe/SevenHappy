@@ -107,9 +107,9 @@
     NSArray *temp = [NSArray arrayWithObjects:@"1", @"2", @"3",@"4", @"5",@"6", @"7", @"8", @"9", @"10", @"11", @"12", @"13", @"14", @"15", @"16", @"17", @"18", @"19", @"20", @"21", @"22", @"23", @"24", @"25", @"26", @"27", @"28", @"29", @"30", nil];
     NSMutableArray *tempArray = [[NSMutableArray alloc]initWithArray:temp];
     NSMutableArray*resultArray = [[NSMutableArray alloc]init];
-    int i;
+
     long count = temp.count;
-    for (i = 0; i < count; i++) {
+    for (int i = 0; i < count; i++) {
         int index =arc4random() % (count - i);
         [resultArray addObject:[tempArray objectAtIndex:index]];
         [tempArray removeObjectAtIndex:index];
@@ -123,11 +123,17 @@
 - (NSArray *) gemFiveRandomNumbersoutOfScope:(NSArray *)numberPool
 {
     NSArray * tempArray = [[NSArray alloc] init];
+    int count = 0;
     do
     {
+        if(count > 1){
+            NSLog(@"Term %d is duplicated", count);
+        }
         tempArray = [self gem30RandomNumbers];
+        count++;
     }
     while ([self isArray:tempArray existInArrayPool:numberPool]);
+    NSLog(@"This is the %d turn to gem the nonduplicated Array", count);
     return tempArray;
 }
 
