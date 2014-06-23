@@ -20,7 +20,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 
-    NSArray * resultNumber = [self.store gemFiveRandomNumbersoutOfScope:self.store.numbers];
+    NSArray * resultNumber = [self.store gemFiveRandomNumbersOutOfScope:self.store.numbers];
 
 }
 

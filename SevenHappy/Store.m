@@ -120,7 +120,7 @@
 }
 
 #pragma mark - Random five arrary with scope (1-30)
-- (NSArray *) gemFiveRandomNumbersoutOfScope:(NSArray *)numberPool
+- (NSArray *) gemFiveRandomNumbersOutOfScope:(NSArray *)numberPool
 {
     NSArray * tempArray = [[NSArray alloc] init];
     int count = 0;
