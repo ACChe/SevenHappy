@@ -125,8 +125,8 @@
 			children = (
 				6A03C7C517D09656009671CE /* AppDelegate.h */,
 				6A03C7C617D09656009671CE /* AppDelegate.m */,
-				6A03C7E917D09FDD009671CE /* Controller */,
 				6A03C7E817D09FD5009671CE /* Model */,
+				6A03C7E917D09FDD009671CE /* ViewModel */,
 				6A03C7E717D09FC8009671CE /* View */,
 				6A03C7CB17D09656009671CE /* Images.xcassets */,
 				6A03C7BA17D09656009671CE /* Supporting Files */,
@@ -184,11 +184,11 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		6A03C7E917D09FDD009671CE /* Controller */ = {
+		6A03C7E917D09FDD009671CE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Controller;
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

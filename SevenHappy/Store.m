@@ -102,7 +102,7 @@
     return result;
 }
 
-#pragma mark - Random 1 - 30 number
+#pragma mark - Random number 1 - 30  method one
 - (NSArray *) gem30RandomNumbers
 {
     NSArray *temp = [NSArray arrayWithObjects:@"1", @"2", @"3",@"4", @"5",@"6", @"7", @"8", @"9", @"10", @"11", @"12", @"13", @"14", @"15", @"16", @"17", @"18", @"19", @"20", @"21", @"22", @"23", @"24", @"25", @"26", @"27", @"28", @"29", @"30", nil];
@@ -115,9 +115,46 @@
         [resultArray addObject:[tempArray objectAtIndex:index]];
         [tempArray removeObjectAtIndex:index];
     }
-//    [tempArray release];
     
     return [NSArray arrayWithArray:[self splitArray:resultArray PerCount:7]];
+}
+
+#pragma mark - Random number 1 - 30 method two
+- (NSArray *) gemNew30RandomNumbers
+{
+    return [self generateRandomNumberFrom:1 toNumber:30 withCount:30];
+}
+
+#pragma mark - Random number with scope
+- (NSArray *) generateRandomNumberFrom:(int) startNumber toNumber:(int) endNumber withCount:(int) count {
+    if (startNumber > endNumber) {
+        return nil;
+    }
+    
+    if (abs(startNumber - endNumber) > count) {
+        return nil;
+    }
+    
+    NSMutableArray *data = [[NSMutableArray alloc] init];
+    for (int i = 0; i < count; i++) {
+        int tempValue = [self getRandomNumber:startNumber to:endNumber];
+        NSNumber *number = [NSNumber numberWithInt:tempValue];
+        if (![data containsObject:number]) {
+            [data addObject:number];
+        } else {
+            i = i - 1;
+        }
+    }
+//    return [data copy];
+    return [NSArray arrayWithArray:[self splitArray:data PerCount:7]];
+
+}
+
+#pragma gem one random number
+-(int)getRandomNumber:(int)from to:(int)to
+{
+    
+    return (int)(from + (arc4random() % (to - from + 1)));
 }
 
 #pragma mark - Random five arrary with scope (1-30)
