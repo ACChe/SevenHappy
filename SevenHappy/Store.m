@@ -167,7 +167,7 @@
         if(count > 1){
             NSLog(@"Term %d is duplicated", count);
         }
-        tempArray = [self gem30RandomNumbers];
+        tempArray = [self gemNew30RandomNumbers];
         count++;
     }
     while ([self isArray:tempArray existInArrayPool:numberPool]);
