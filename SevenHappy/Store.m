@@ -31,8 +31,8 @@
 {
 //    Read the data from external file
     NSBundle *mainBundle = [NSBundle mainBundle];
-    NSString *theFile = [mainBundle pathForResource:@"SevenHappy" ofType:@"txt"];
-//    NSString *theFile = [mainBundle pathForResource:@"DoubleBall" ofType:@"txt"];
+//    NSString *theFile = [mainBundle pathForResource:@"SevenHappy" ofType:@"txt"];
+    NSString *theFile = [mainBundle pathForResource:@"DoubleBall" ofType:@"txt"];
     
 //    NSString *filePathName = @"/SevenHappy.txt";
     NSError *fileError;
