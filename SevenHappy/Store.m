@@ -32,6 +32,7 @@
 //    Read the data from external file
     NSBundle *mainBundle = [NSBundle mainBundle];
     NSString *theFile = [mainBundle pathForResource:@"SevenHappy" ofType:@"txt"];
+//    NSString *theFile = [mainBundle pathForResource:@"DoubleBall" ofType:@"txt"];
     
 //    NSString *filePathName = @"/SevenHappy.txt";
     NSError *fileError;
@@ -102,39 +103,41 @@
     return result;
 }
 
-#pragma mark - Random number 1 - 30  method one
-- (NSArray *) gem30RandomNumbers
-{
-    NSArray *temp = [NSArray arrayWithObjects:@"1", @"2", @"3",@"4", @"5",@"6", @"7", @"8", @"9", @"10", @"11", @"12", @"13", @"14", @"15", @"16", @"17", @"18", @"19", @"20", @"21", @"22", @"23", @"24", @"25", @"26", @"27", @"28", @"29", @"30", nil];
-    NSMutableArray *tempArray = [[NSMutableArray alloc]initWithArray:temp];
-    NSMutableArray*resultArray = [[NSMutableArray alloc]init];
+//#pragma mark - Random number 1 - 30  method one
+//- (NSArray *) gem30RandomNumbers
+//{
+//    NSArray *temp = [NSArray arrayWithObjects:@"1", @"2", @"3",@"4", @"5",@"6", @"7", @"8", @"9", @"10", @"11", @"12", @"13", @"14", @"15", @"16", @"17", @"18", @"19", @"20", @"21", @"22", @"23", @"24", @"25", @"26", @"27", @"28", @"29", @"30", nil];
+//    NSMutableArray *tempArray = [[NSMutableArray alloc]initWithArray:temp];
+//    NSMutableArray*resultArray = [[NSMutableArray alloc]init];
+//
+//    long count = temp.count;
+//    for (int i = 0; i < count; i++) {
+//        int index =arc4random() % (count - i);
+//        [resultArray addObject:[tempArray objectAtIndex:index]];
+//        [tempArray removeObjectAtIndex:index];
+//    }
+//    
+//    return [NSArray arrayWithArray:[self splitArray:resultArray PerCount:7]];
+//}
 
-    long count = temp.count;
-    for (int i = 0; i < count; i++) {
-        int index =arc4random() % (count - i);
-        [resultArray addObject:[tempArray objectAtIndex:index]];
-        [tempArray removeObjectAtIndex:index];
-    }
-    
-    return [NSArray arrayWithArray:[self splitArray:resultArray PerCount:7]];
-}
 
-#pragma mark - Random number 1 - 30 method two
-- (NSArray *) gemNew30RandomNumbers
+
+#pragma mark - Random number 1 - Assign Number
+- (NSArray *) gemAssignNumbersInScope:(int)_scope perLine:(int)_inAmount
 {
-    return [self generateRandomNumberFrom:1 toNumber:30 withCount:30];
+    return [self generateRandomNumberFrom:1 toNumber:_scope perLineCount:_inAmount];
 }
 
 #pragma mark - Random number with scope
-- (NSArray *) generateRandomNumberFrom:(int) startNumber toNumber:(int) endNumber withCount:(int) count {
+- (NSArray *) generateRandomNumberFrom:(int) startNumber toNumber:(int) endNumber perLineCount:(int) amount {
     if (startNumber > endNumber) {
         return nil;
     }
     
-    if (abs(startNumber - endNumber) > count) {
-        return nil;
-    }
-    
+//    if (abs(startNumber - endNumber) > count) {
+//        return nil;
+//    }
+    int count = abs(startNumber - endNumber) + 1;
     NSMutableArray *data = [[NSMutableArray alloc] init];
     for (int i = 0; i < count; i++) {
         int tempValue = [self getRandomNumber:startNumber to:endNumber];
@@ -146,7 +149,7 @@
         }
     }
 //    return [data copy];
-    return [NSArray arrayWithArray:[self splitArray:data PerCount:7]];
+    return [NSArray arrayWithArray:[self splitArray:data PerCount:amount]];
 
 }
 
@@ -158,7 +161,7 @@
 }
 
 #pragma mark - Random five arrary with scope (1-30)
-- (NSArray *) gemFiveRandomNumbersOutOfScope:(NSArray *)numberPool
+- (NSArray *) gemRandomNumbersInOfScope:(NSArray *)numberPool withNumberRule:(int) amount inLine:(int) lineAmount
 {
     NSArray * tempArray = [[NSArray alloc] init];
     int count = 0;
@@ -167,13 +170,17 @@
         if(count > 1){
             NSLog(@"Term %d is duplicated", count);
         }
-        tempArray = [self gemNew30RandomNumbers];
+        tempArray = [self gemAssignNumbersInScope:amount perLine:lineAmount];
         count++;
     }
     while ([self isArray:tempArray existInArrayPool:numberPool]);
     NSLog(@"This is the %d turn to gem the nonduplicated Array", count);
     return tempArray;
 }
+
+
+
+
 
 
 #pragma mark - split the array to one set of seven

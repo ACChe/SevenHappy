@@ -20,8 +20,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 
-    NSArray * resultNumber = [self.store gemFiveRandomNumbersOutOfScope:self.store.numbers];
-
+    NSArray * resultNumber = [self.store gemRandomNumbersInOfScope:self.store.numbers withNumberRule:33 inLine:6];
 }
 
 @synthesize store = _store;

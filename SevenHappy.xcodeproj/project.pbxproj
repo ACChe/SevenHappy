@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11A64CA719FD17C700B67356 /* DoubleBall.txt in Resources */ = {isa = PBXBuildFile; fileRef = 11A64CA619FD17C700B67356 /* DoubleBall.txt */; };
 		6A03C7B417D09656009671CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A03C7B317D09656009671CE /* Cocoa.framework */; };
 		6A03C7BE17D09656009671CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A03C7BC17D09656009671CE /* InfoPlist.strings */; };
 		6A03C7C017D09656009671CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A03C7BF17D09656009671CE /* main.m */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11A64CA619FD17C700B67356 /* DoubleBall.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DoubleBall.txt; sourceTree = "<group>"; };
 		6A03C7B017D09656009671CE /* SevenHappy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SevenHappy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A03C7B317D09656009671CE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6A03C7B617D09656009671CE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -139,6 +141,7 @@
 			children = (
 				6A03C7C817D09656009671CE /* MainMenu.xib */,
 				6A03C7BF17D09656009671CE /* main.m */,
+				11A64CA619FD17C700B67356 /* DoubleBall.txt */,
 				6A1BCF4817D47BB500742F59 /* SevenHappy.txt */,
 				6A03C7BB17D09656009671CE /* SevenHappy-Info.plist */,
 				6A03C7BC17D09656009671CE /* InfoPlist.strings */,
@@ -271,6 +274,7 @@
 				6A1BCF4917D47BB500742F59 /* SevenHappy.txt in Resources */,
 				6A03C7CC17D09656009671CE /* Images.xcassets in Resources */,
 				6A03C7C417D09656009671CE /* Credits.rtf in Resources */,
+				11A64CA719FD17C700B67356 /* DoubleBall.txt in Resources */,
 				6A03C7CA17D09656009671CE /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

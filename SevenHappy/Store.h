@@ -16,8 +16,8 @@
 
 
 - (NSArray *) filterNumbersByNoDuplicate:(NSArray *)originalArray;
-- (NSArray *) gemNew30RandomNumbers;
-- (NSArray *) gemFiveRandomNumbersOutOfScope:(NSArray *)numberPool;
+- (NSArray *) gemAssignNumbersInScope:(int)_scope perLine:(int)_inAmount;
+- (NSArray *) gemRandomNumbersInOfScope:(NSArray *)numberPool withNumberRule:(int) amount inLine:(int) lineAmount;
 - (BOOL)isArray:(NSArray *)aArray existInArrayPool:(NSArray *)poolArray;
 - (void)saveResultToHistory:(NSArray *)aArray;
 
