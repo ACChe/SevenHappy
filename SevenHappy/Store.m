@@ -8,6 +8,7 @@
 
 #import "Store.h"
 #import "Numbers.h"
+#import "NSString+Converter.h"
 
 @implementation Store
 
@@ -31,8 +32,8 @@
 {
 //    Read the data from external file
     NSBundle *mainBundle = [NSBundle mainBundle];
-//    NSString *theFile = [mainBundle pathForResource:@"SevenHappy" ofType:@"txt"];
-    NSString *theFile = [mainBundle pathForResource:@"DoubleBall" ofType:@"txt"];
+    NSString *theFile = [mainBundle pathForResource:@"SevenHappy" ofType:@"txt"];
+//    NSString *theFile = [mainBundle pathForResource:@"DoubleBall" ofType:@"txt"];
     
 //    NSString *filePathName = @"/SevenHappy.txt";
     NSError *fileError;
@@ -64,7 +65,8 @@
     NSMutableArray * resultArray = [[NSMutableArray alloc] init];
     [originData enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
          NSArray * tempArray = [obj componentsSeparatedByString:@","];
-        [resultArray addObject:tempArray];
+        NSArray * tempNumberArray = [tempArray valueForKey:@"decimalNumberValue"];
+        [resultArray addObject:tempNumberArray];
     }];
     return  [resultArray copy];
 }
@@ -93,7 +95,7 @@
 
     [poolArray enumerateObjectsUsingBlock:^(id obj_out, NSUInteger idx_out, BOOL *stop_out) {
         [aArray enumerateObjectsUsingBlock:^(id obj_in, NSUInteger idx_in, BOOL *stop_in) {
-            if ([aArray[idx_in] isEqualTo:obj_out]){
+            if ([aArray[idx_in] isEqualTo:(NSNumber *)obj_out]){
                 result = YES;
                 *stop_out = YES;
             }
@@ -171,9 +173,21 @@
             NSLog(@"Term %d is duplicated", count);
         }
         tempArray = [self gemAssignNumbersInScope:amount perLine:lineAmount];
+        //test code
+        if (count == 0) {
+            tempArray = @[@[@4,@14,@19,@22,@26,@29,@30],
+                          @[@1,@2,@6,@11,@14,@19,@27],
+                          @[@6,@8,@10,@21,@25,@28,@29],
+                          @[@1,@2,@3,@4,@8,@23,@28]];
+            
+//            tempArray = @[@[@"4",@"14",@"19",@"22",@"26",@"29",@"30"],
+//                          @[@"1",@"2",@"6",@"11",@"14",@"19",@"27"],
+//                          @[@"6",@"8",@"10",@"21",@"25",@"28",@"29"],
+//                          @[@"1",@"2",@"3",@"4",@"8",@"23",@"28"]];
+        }
+        
         count++;
-    }
-    while ([self isArray:tempArray existInArrayPool:numberPool]);
+    } while ([self isArray:tempArray existInArrayPool:numberPool]);
     NSLog(@"This is the %d turn to gem the nonduplicated Array", count);
     return tempArray;
 }

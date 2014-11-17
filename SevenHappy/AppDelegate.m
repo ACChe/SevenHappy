@@ -20,7 +20,19 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 
-    NSArray * resultNumber = [self.store gemRandomNumbersInOfScope:self.store.numbers withNumberRule:33 inLine:6];
+    //test code
+//    NSArray *a1 = @[@1, @2, @3];
+//    NSArray *a2 = @[@1, @2, @3];
+//    
+//    if ([a1 isEqualTo:a2]) {
+//        NSLog(@"a1 is equal to a2");
+//    } else {
+//        NSLog(@"Not in the same");
+//    }
+    
+    
+    
+    NSArray * resultNumber = [self.store gemRandomNumbersInOfScope:self.store.numbers withNumberRule:30 inLine:7];
 }
 
 @synthesize store = _store;
