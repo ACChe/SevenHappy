@@ -14,7 +14,6 @@
 		6A03C7C017D09656009671CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A03C7BF17D09656009671CE /* main.m */; };
 		6A03C7C417D09656009671CE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6A03C7C217D09656009671CE /* Credits.rtf */; };
 		6A03C7C717D09656009671CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A03C7C617D09656009671CE /* AppDelegate.m */; };
-		6A03C7CA17D09656009671CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A03C7C817D09656009671CE /* MainMenu.xib */; };
 		6A03C7CC17D09656009671CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A03C7CB17D09656009671CE /* Images.xcassets */; };
 		6A03C7D317D09656009671CE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A03C7D217D09656009671CE /* XCTest.framework */; };
 		6A03C7D417D09656009671CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A03C7B317D09656009671CE /* Cocoa.framework */; };
@@ -23,6 +22,7 @@
 		6A1BCF4917D47BB500742F59 /* SevenHappy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6A1BCF4817D47BB500742F59 /* SevenHappy.txt */; };
 		6A1BCF4D17D4836E00742F59 /* Numbers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1BCF4C17D4836E00742F59 /* Numbers.m */; };
 		6AAB655D17D4A18600195509 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB655C17D4A18600195509 /* Store.m */; };
+		83EAD6530E8869D433BCA539 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83EADB64EE6D28AEB29AD9AA /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,6 @@
 		6A03C7C317D09656009671CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		6A03C7C517D09656009671CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6A03C7C617D09656009671CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6A03C7C917D09656009671CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		6A03C7CB17D09656009671CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6A03C7D117D09656009671CE /* SevenHappyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SevenHappyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A03C7D217D09656009671CE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -63,6 +62,7 @@
 		6A1BCF4C17D4836E00742F59 /* Numbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Numbers.m; sourceTree = "<group>"; };
 		6AAB655B17D4A18600195509 /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
 		6AAB655C17D4A18600195509 /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
+		83EADE3BDF63592597DF4566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +152,6 @@
 		6A03C7BA17D09656009671CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6A03C7C817D09656009671CE /* MainMenu.xib */,
 				6A03C7BF17D09656009671CE /* main.m */,
 				11A64CA619FD17C700B67356 /* DoubleBall.txt */,
 				6A1BCF4817D47BB500742F59 /* SevenHappy.txt */,
@@ -185,6 +184,7 @@
 		6A03C7E717D09FC8009671CE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				83EADB64EE6D28AEB29AD9AA /* MainMenu.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -288,7 +288,7 @@
 				6A03C7CC17D09656009671CE /* Images.xcassets in Resources */,
 				6A03C7C417D09656009671CE /* Credits.rtf in Resources */,
 				11A64CA719FD17C700B67356 /* DoubleBall.txt in Resources */,
-				6A03C7CA17D09656009671CE /* MainMenu.xib in Resources */,
+				83EAD6530E8869D433BCA539 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,20 +350,20 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		6A03C7C817D09656009671CE /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6A03C7C917D09656009671CE /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
 		6A03C7DA17D09656009671CE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6A03C7DB17D09656009671CE /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		83EADB64EE6D28AEB29AD9AA /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83EADE3BDF63592597DF4566 /* Base */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

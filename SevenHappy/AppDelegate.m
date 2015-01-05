@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Store.h"
+#import "NSString+Converter.h"
 
 @implementation AppDelegate
 
@@ -33,6 +34,17 @@
     
     
     NSArray * resultNumber = [self.store gemRandomNumbersInOfScope:self.store.numbers withNumberRule:30 inLine:7];
+    
+    NSString * willSavedString = [[resultNumber valueForKey:@"description"] componentsJoinedByString:@"\n"];
+    
+    NSBundle *mainBundle = [NSBundle mainBundle];
+    NSString *thePath = [[mainBundle resourcePath] stringByAppendingString:@"SevenHaapHistory.txt" ];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+//    if (![fileManager fileExistsAtPath:thePath]) {
+        [willSavedString appendToFile:thePath encoding:NSUTF8StringEncoding];
+//    }
+    
+    
 }
 
 @synthesize store = _store;

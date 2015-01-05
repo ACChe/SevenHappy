@@ -10,6 +10,6 @@
 
 @interface NSString (Converter)
 
--(NSDecimalNumber*) decimalNumberValue;
-
+- (NSDecimalNumber*) decimalNumberValue;
+- (BOOL) appendToFile:(NSString *)path encoding:(NSStringEncoding)enc;
 @end
