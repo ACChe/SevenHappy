@@ -18,20 +18,20 @@
 - (BOOL) appendToFile:(NSString *)path encoding:(NSStringEncoding)enc;
 {
     BOOL result = YES;
-    NSFileHandle* fh = [NSFileHandle fileHandleForWritingAtPath:path];
-    if ( !fh ) {
+    NSFileHandle* fileHandle = [NSFileHandle fileHandleForWritingAtPath:path];
+    if ( !fileHandle ) {
         [[NSFileManager defaultManager] createFileAtPath:path contents:nil attributes:nil];
-        fh = [NSFileHandle fileHandleForWritingAtPath:path];
+        fileHandle = [NSFileHandle fileHandleForWritingAtPath:path];
     }
-    if ( !fh ) return NO;
+    if ( !fileHandle ) return NO;
     @try {
-        [fh seekToEndOfFile];
-        [fh writeData:[self dataUsingEncoding:enc]];
+        [fileHandle seekToEndOfFile];
+        [fileHandle writeData:[self dataUsingEncoding:enc]];
     }
     @catch (NSException * e) {
         result = NO;
     }
-    [fh closeFile];
+    [fileHandle closeFile];
     return result;
 }
 @end

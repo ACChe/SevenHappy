@@ -73,16 +73,20 @@
 
 
 #pragma mark - Save the result to local file
-- (void) saveResultToHistory:(NSArray *)aArray
+- (void) saveResultToHistory:(NSString *)result
 {
-//    NSBundle *mainBundle = [NSBundle mainBundle];
-//    NSString *historyFilePathName = [mainBundle pathForResource:@"history" ofType:@"txt"];
-    NSTimeInterval secondsPerDay = 24 * 60 * 60;
-//    NSString * dateValue = [NSString stringWithFormat:@"%f", [[NSDate date] timeIntervalSince1970]];
-    NSString *dateValue = [NSString stringWithFormat:@"%@", [[NSDate alloc] initWithTimeIntervalSinceNow:secondsPerDay]];
-    NSLog(@"date value = %@", dateValue);
-    NSString *histroyFilePahtName = [NSString stringWithFormat: @"history_%@.txt", dateValue];
-    [aArray writeToFile:histroyFilePahtName atomically:YES];
+    NSBundle *mainBundle = [NSBundle mainBundle];
+    NSString *thePath = [[mainBundle resourcePath] stringByAppendingString:@"SevenHappyHistory.txt" ];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *currentDateString = [dateFormatter stringFromDate:[NSDate date]];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSString *tempResult = [currentDateString stringByAppendingFormat:@"\n%@",result];
+    if (![fileManager fileExistsAtPath:thePath]) {
+        [tempResult appendToFile: thePath encoding: NSUTF8StringEncoding];
+//    }
     
 }
 

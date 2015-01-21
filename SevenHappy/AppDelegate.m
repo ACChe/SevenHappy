@@ -37,12 +37,7 @@
     
     NSString * willSavedString = [[resultNumber valueForKey:@"description"] componentsJoinedByString:@"\n"];
     
-    NSBundle *mainBundle = [NSBundle mainBundle];
-    NSString *thePath = [[mainBundle resourcePath] stringByAppendingString:@"SevenHaapHistory.txt" ];
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-//    if (![fileManager fileExistsAtPath:thePath]) {
-        [willSavedString appendToFile:thePath encoding:NSUTF8StringEncoding];
-//    }
+    [self.store saveResultToHistory:willSavedString];
     
     
 }
