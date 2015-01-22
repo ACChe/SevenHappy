@@ -82,11 +82,8 @@
     [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     NSString *currentDateString = [dateFormatter stringFromDate:[NSDate date]];
     
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSString *tempResult = [currentDateString stringByAppendingFormat:@"\n%@",result];
-    if (![fileManager fileExistsAtPath:thePath]) {
+    NSString *tempResult = [currentDateString stringByAppendingFormat:@"\n%@\n",result];
         [tempResult appendToFile: thePath encoding: NSUTF8StringEncoding];
-//    }
     
 }
 
